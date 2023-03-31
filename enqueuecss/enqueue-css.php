@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Enqueue Custom CSS
+Plugin Name: JCM Wordpress Enqueue Custom CSS
 Plugin URI: 
-Description: Demo plugin for learning how to enqueue CSS with a plugin.
+Description: This plugin will change how posts are dislplayed on the home page as well as the comment page. 
 Version: 1.0.0
 Author: Judd Melvin
 License: GPLv2 or later
@@ -22,22 +22,15 @@ include( plugin_dir_path( __FILE__ ) . 'includes/jcmplugin-styles.php');
 
 class JCMenqueueCSS {
 
-  function __construct() {
-    add_action('init', array( $this, 'custom_post_type')); 
-
-  }
 
   function activate(){
     flush_rewrite_rules(); 
 
   }
   function deactivate(){
+    flush_rewrite_rules(); 
     
   }
-  function uninstall(){
-    
-  }
-
   function custom_post_type(){
     register_post_type('Enqueue', ['public' => true, 'label' => 'Enqueue']); 
   }
