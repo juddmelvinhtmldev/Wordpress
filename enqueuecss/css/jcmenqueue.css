@@ -4,7 +4,9 @@
     display: none; 
 }
 .page-header {
-    text-align: center; 
+    text-align: center !important; 
+    float: none !important; 
+    margin: 0 auto !important; 
 }
 #primary.content-area{
     display: flex; 
@@ -100,6 +102,7 @@
 article {
     width: 25% !important; 
     padding: 10px; 
+    height: 700px !important; 
 }
 
 /*header css*/
@@ -127,33 +130,19 @@ article {
 }
 
 /*Reply Page*/
-.comment-author {
-    padding-left: 80px; 
+
+.sharedaddy {
+    display: none; 
 }
-.comment-metadata {
-    padding-left: 80px;
+.byline {
+    display: none !important; 
 }
-.comment-author img{
-  margin-left: 65px; 
-}
-.nav-subtitle {
-    width: 100px; 
-}
-.single .byline {
-    display: none !important;  
-}
-.nav-next {
-    width: 150px !important; 
+.jp-relatedposts {
+    display: none !important; 
 }
 .nav-links {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-   
+    width: 150px; 
 }
-.navigation .post-navigation {
-    display: flex !important; 
-}
-.navigation .post-navigation .nav-previous {
-    width: 100% !important; 
+.nav-subtitle {
+    width: 200px; 
 }
