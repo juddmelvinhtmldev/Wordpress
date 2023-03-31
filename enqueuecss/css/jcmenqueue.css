@@ -97,6 +97,10 @@
     flex-wrap: wrap; 
     width: 100%;  
 }
+article {
+    width: 25% !important; 
+    padding: 10px; 
+}
 
 /*header css*/
 #wp-custom_header {
