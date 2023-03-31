@@ -1,7 +1,7 @@
 
 /*content area*/ 
-.navigation-top {
-    display: none; 
+.menu-scroll-down{
+    display: none !important; 
 }
 .page-header {
     text-align: center !important; 
